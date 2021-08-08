@@ -1,2 +1,4 @@
 /.idea/
 /__MACOSX/
+/.dart_tool/
+/build/

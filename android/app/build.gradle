@@ -27,9 +27,9 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 apply plugin: 'com.google.gms.google-services'  // Google Services plugin
 
 android {
-    compileSdkVersion 29
-
-    
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+    ndkVersion '22.1.7171670'
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -40,10 +40,9 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.edentech.fuodz"
         minSdkVersion 23 //Required for Jitsi
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
